@@ -6,7 +6,9 @@ const h1Size = '3.5rem';
 const typography: TypographyOptions = {
   h1: {
     fontFamily: 'Zilla Slab',
-    fontSize: h1Size,
+    '@media (min-width:270px)': {
+    fontSize: '2.4rem',
+  },
   },
   button: {
     textTransform: 'none',
